@@ -5,8 +5,9 @@ import { UpdateUserDto } from './dto/update-user.dto';
 import mongoose, { Model, } from 'mongoose';
 import { Interest, User, UserFind } from "./entities/user.entity";
 import * as dayjs from 'dayjs'
-import { getChineseZodiac, getZodiacSign } from 'src/common/utils';
+import { getChineseZodiac, getZodiacSign } from '../../common/utils';
 import { CreateUserInterestDto } from './dto/create-user-interest.dto';
+
 
 
 @Injectable()

@@ -1,10 +1,8 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { LoginUserDTO } from './dto/login.dto';
-import { UpdateAuthDto } from './dto/update-auth.dto';
-import { AnyObject, ClientSession, Document, DocumentSetOptions, Error, FlattenMaps, MergeType, Model, ModifiedPathsSnapshot, pathsToSkip, PopulateOptions, Query, QueryOptions, SaveOptions, ToObjectOptions, UpdateQuery, UpdateWithAggregationPipeline } from 'mongoose';
+import { Model } from 'mongoose';
 import { User } from '../user/entities/user.entity';
 import * as bcrypt from "bcrypt";
-
 import { JwtService } from '@nestjs/jwt'
 import { RegisterUserDTO } from './dto/register.dto';
 
